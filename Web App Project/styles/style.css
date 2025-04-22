@@ -1,0 +1,199 @@
+/*
+filename: style.css
+author: Jedd Nugent
+created: 30/03/2020
+last modified: 03/04/2020
+description: This is the CSS styles for all the pages the Mobile Phones 4 You website
+*/
+* {font-family: Arial, Helvetica, sans-serif; color: black}
+
+
+h1 {
+    color:black; 
+    font-size: 2em; 
+    font-weight: bold; 
+}
+
+h1, h2, h3, h4 {
+    text-align: center; 
+}
+
+p {
+    font-size: medium;
+}
+/* Footer css code based off: https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551 --> */
+footer{
+    position: absolute;
+    width: 100%;
+}
+
+footer p{
+    font-size: smaller;
+    text-align: center;
+    align-items: center;  
+ }
+
+
+/* Nav bar formatting from: https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/ which has been modified --> */
+.nav{ 
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    padding:0.2cm 0.6cm;
+    border: 4px solid #ccc;
+    text-align: center;
+    color: black;
+}
+.nav a:hover{
+    background-color: lightyellow; 
+    border: 4px solid black;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+
+.centerImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.order{
+  text-align: left;
+
+}
+.order table{
+  text-align: center;
+  margin-left: 0%;
+  background-color: white;
+}
+
+
+
+/* Definition List css code based off code from: https://www.the-art-of-web.com/css/format-dl/ */
+dl {
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+  }
+  dt {
+    padding-right: 10px;
+    width: fit-content;
+    flex-basis: 45%;
+    padding: 2px 4px;
+    text-align: right;
+    float: left;
+  }
+  dd {
+    padding-left: 10px;
+    width: fit-content;
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin: 0;
+    float: left;
+  }
+
+  figure{
+    width: 15%;  
+    float: right;
+    border: double;
+    padding: 20px;
+  }
+
+  table{
+    margin: auto;
+    width: auto;
+    padding: 10px;
+    background-color: #ffffe0;
+  }
+
+  #timetable, #prodTable{
+    empty-cells: show; 
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  #timetable td, th, #prodTable th {
+    border: 1px solid black;
+  }
+
+  #prodTable td{
+    border-right: solid 1px black;
+    border-left: solid 1px black;
+    text-align: center;
+    padding: 5px;
+  }
+
+  #prodTable th{
+    height: 50px;
+  }
+
+
+  aside {
+    border: 4px inset lightyellow;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    float: right;
+    width: 25%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.subTotal{
+  float: right;
+  text-align: right;
+  border: 0;
+  font-size: 16px;
+  width: fit-content;
+}
+
+.prodOrder{
+  border: 0;
+  font-size: 16px;
+  width: 400px;
+}
+
+
+
+/*Parallax CSS based off: https://www.w3schools.com/howto/howto_css_parallax.asp*/
+.parallax {
+  /* The image used */
+  background-image: url("images/homeBackground.jpg"); /*Orignail Unedited photo: https://static.booking.weekendesk.fr/image_cache/A1087000/1087421/1087421_986_485_FSImage_1_EDIT_NEW-YEAR_25.jpg*/
+
+  /* Set a specific height */
+  min-height: 900px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*Code for jump adapted from code found here: https://css-tricks.com/making-css-animations-feel-natural/*/
+img.jump:hover {
+  animation: jump 1s;
+}
+
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}

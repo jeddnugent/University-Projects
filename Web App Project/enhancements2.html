@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="The online storefront for Mobile Phones 4 You" /> 
+  <meta name="keywords" content="Mobile, Phones, Mobile Phones, Sale, Apple, Samsung, iPhone, Galaxy, Oppo" />
+  <meta name="author" content="Jedd Nugent"  />
+  <link rel="icon" href = "images/phoneIcon.png"> <!--Original img: https://www.theblocklearning.com/wp-content/uploads/2018/09/mobile.png-->
+  <title>Mobile Phones 4 U</title>
+  <link href= "styles/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Mobile Phones 4 You</h1> 
+      </header>
+    <ul class="nav"> <!-- Nav bar formatting from: https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/ --> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="enquire.html">Enquire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="enhancements.html">Enhancements</a></li>
+        <li><a href="enhancements2.html">Enhancements 2</a></li>
+    </ul>
+
+    <section class="center">
+          <h2>Enhancements made to this website. Part 2</h2>
+          <h3><a href="enquire.html#finalPrice">Automatic Total Price Updater</a></h3>
+          <p>
+            
+            The final price updater automatically calculates the price of the selected phone, multiplied by the quantity selected. It will also add any selected extra on top of that and will dynamically change whenever one of these elements is altered. The way this works is using javascript in the part2.js I am able to detect when each field is changed so for all those events I can run essentially the same code and that is how the total price always is updated and accurate.
+
+          </p>
+
+          <h3><a href="payment.html#enhancement3">Dynamic Extras List</a></h3>
+          <p>
+            
+            The Dynamic Extras list was one of the harder elements to put together on my website. Depending on how many extras are selected the payments page is updated to show a list of selected extras which will change in size depending on what element is selected and will never display a blank entry when less than the maximum elements are chosen. The way this is accomplished is within the part2.js the selected extras are pushed into a blank array which is then cycled through using a for loop. The way the blank entries are dealt with is to delete the labels which are redundant creating the dynamic sizing of the list.
+
+          </p>
+
+    </section>
+
+
+
+
+    <footer>
+      <p>Mobile Phones 4 You &copy; &nbsp; Contact information: <a href="mailto:103064999@student.swin.edu.au"> 103064999@student.swin.edu.au </a></p>
+    </footer>
+</body>
+</html>
